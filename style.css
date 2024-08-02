@@ -1,0 +1,91 @@
+body{
+    height: 100vh;
+    background:url('task.jpg');
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+#add-task-container {
+    width:350px;
+    padding: 20px 0px;
+    display: flex;
+}
+
+input{
+    flex:5;
+    margin-right:10px;
+    border-radius: 10px;
+    font-size:1.4rem;
+    padding: 17.5px;
+    border: 1px solid #333;
+    outline: lightgreen;
+}
+
+#add-task{
+    flex: 1;
+    font-size: 1.4rem;
+    background-color: transparent;
+    color:#333 ;
+    padding:0px 15px;
+    width:100px;
+    border:1px solid #000;
+    border-radius:10px;
+    transition: 0.4s ease;
+    font-weight: bold;
+}
+
+#add-task:hover{
+    cursor: pointer;
+    background-color:#333 ;
+    color: #f4f4f4;
+}
+
+/* styling for app.js */
+
+.task{
+    width:100%;
+    background-color: #dedeff;
+    border-radius: 10px;
+
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.task li{
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.task button{
+    flex:1;
+    border-radius: 10px;
+    background-color:crimson;
+    border: none;
+    margin: 0 5px;
+    height:40px;
+    color: white;
+    cursor: pointer;
+}
+
+.task .checkTask{
+    background-color: green;
+}
+
